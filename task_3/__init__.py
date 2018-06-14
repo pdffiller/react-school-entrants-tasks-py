@@ -11,9 +11,9 @@ class Emitter:
 
         Paramters
         ---------
-        event : string
+        event : str
             событие
-        handler : function
+        handler : func
             обработчик
         """
         pass
@@ -24,9 +24,9 @@ class Emitter:
 
         Parameters
         ----------
-        event : string
+        event : str
             событие
-        data : any
+        data
             данные, которые необходимо передать обработчикам
         """
         pass

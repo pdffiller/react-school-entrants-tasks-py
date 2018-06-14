@@ -6,9 +6,9 @@ def have_same_items(list1, list2):
 
         Parameters
         ----------
-        list1 : int[]
+        list1 : list of int
             отсортированный по возрастанию массив уникальных элементов
-        list2 : int[]
+        list2 : list of int
             массив произвольной длинны произвольных чисел
         
         Returns
