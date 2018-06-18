@@ -9,7 +9,7 @@ class Emitter:
     def on(self, event, handler):
         """ связывает обработчик handler с событием event
 
-        Paramters
+        Parameters
         ---------
         event : str
             событие

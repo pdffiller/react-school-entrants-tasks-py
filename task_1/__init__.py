@@ -10,7 +10,7 @@ def fill_spiral_matrix(n):
     
     Returns
     -------
-    list of list of int
+    list[list[int]]
         Матрица заполненная по спирали
     """
     result = [[]]
