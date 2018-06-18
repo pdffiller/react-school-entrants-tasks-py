@@ -1,15 +1,15 @@
 # -*- coding: utf-8 -*- 
 
+
 class Emitter:
     def __init__(self):
-      """ Создает экземпляр класса Emitter.
-      """
-      pass
-    
+        """Создает экземпляр класса Emitter."""
+        pass
+
     def on(self, event, handler):
         """ связывает обработчик handler с событием event
 
-        Paramters
+        Parameters
         ---------
         event : str
             событие

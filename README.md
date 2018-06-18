@@ -5,11 +5,10 @@
 Данный репозиторий служит шаблоном для Ваших решений вступительных заданий
 в школу JS-React-разработчиков.
 
-Для решения заданий Вам понадобиться установить на Вашем компьютере следующее программное обеспечение:
+Для решения заданий Вам понадобится установить на Вашем компьютере следующее программное обеспечение:
    1. `git`
    1. `git bash` (*для Windows-пользователей*)
    1. `python`, версии 3.5 (или выше)
-   1. `pip`
    1. Редактор кода или интегрированная среда разработки (см. [Python Wiki](https://wiki.python.org/moin/IntegratedDevelopmentEnvironments))
 
 
@@ -57,14 +56,6 @@
       git push origin master
       ```
 
-### 2. Установите зависимости проекта
-
-Просто выполните команду:
-
-```shell
-make install
-```
-
 ### 3. Напишите решение заданий
 
 Откройте проект в Вашем редакторе кода (или интегрированной среде разработки), перейдите в папку задачи (`./task_1`, `./task_2` или `./task_3`), и внесите нужные изменения в файл `__init__.py`.
@@ -83,7 +74,7 @@ def fill_spiral_matrix(n):
     
     Returns
     -------
-    list of list of int
+    list[list[int]]
         Матрица заполненная по спирали
     """
     result = [[]]
@@ -103,8 +94,15 @@ make test-1 # или test-2, test-3 соответственно
 Если задача решена правильно, то Вы увидите примерно вот такой вот результат:
 
 ```
-. .env/bin/activate && PYTHONENV=pwd python -m unittest test.task_1.FillSpiralMatrixTest
-.......
+python3 -m unittest -v test.task_1.FillSpiralMatrixTest
+test_n_1 (test.task_1.FillSpiralMatrixTest) ... ok
+test_n_10 (test.task_1.FillSpiralMatrixTest) ... ok
+test_n_1000 (test.task_1.FillSpiralMatrixTest) ... ok
+test_n_2 (test.task_1.FillSpiralMatrixTest) ... ok
+test_n_20 (test.task_1.FillSpiralMatrixTest) ... ok
+test_n_5 (test.task_1.FillSpiralMatrixTest) ... ok
+test_n_6 (test.task_1.FillSpiralMatrixTest) ... ok
+
 ----------------------------------------------------------------------
 Ran 7 tests in 0.124s
 
@@ -136,7 +134,7 @@ make install
 make test
 ```
 
-Если все тесты проходят отправьте ссыку на страницу Вашего репозитория на электронную почту:
+Если все тесты проходят отправьте ссылку на страницу Вашего репозитория на электронную почту:
 <br>[js-school@pdffiller.com](mailto:js-school@pdffiller.com?subject=JS%20School%20Entrants%20Tasks)
 
 ## 6. Зарегистрируйте проблему

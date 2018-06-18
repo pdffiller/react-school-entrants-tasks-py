@@ -9,7 +9,7 @@ class HaveSameItemsTest(unittest.TestCase):
 def test_generator(first, second, result):
     def test(self):
         self.assertEqual(
-          have_same_items(first, second),
+          have_same_items(first[:], second[:]),
           result)
     return test
 
