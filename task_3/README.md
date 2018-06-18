@@ -10,30 +10,30 @@
 ## Например:
 
 ```python
-from task_2 import Emitter;
+from task_3 import Emitter
 
-emitter = Emitter();
+emitter = Emitter()
 
 def print_connected(data):
-    print 'We have been connected to %s' % data
+    print('We have been connected to %s' % data)
 
 def print_disconnected(data):
-    print 'We disconnected from %s' % data
+    print('We disconnected from %s' % data)
 
-emitter.on('connect', print_connected);
-emitter.on('disconnect', print_disconnected);
+emitter.on('connect', print_connected)
+emitter.on('disconnect', print_disconnected)
 
-emitter.emit('connect', 'http-server');
+emitter.emit('connect', 'http-server')
 # prints to console:
 # > We have been connected to http-server
-emitter.emit('connect', 'websocket');
+emitter.emit('connect', 'websocket')
 # prints to console:
 # > We have been connected to websocket
 
-emitter.emit('disconnect', 'websocket');
+emitter.emit('disconnect', 'websocket')
 # prints to console:
 # > We disconnected from websocket
-emitter.emit('disconnect', 'http-server');
+emitter.emit('disconnect', 'http-server')
 # prints to console:
 # > We disconnected from http-server
 ```
