@@ -1,3 +1,5 @@
+.PHONY: test test-all test-1 test-2 test-3 clear
+
 test: test-all
 
 test-all:
