@@ -32,7 +32,7 @@
 
 Для копирования репозитория выполните следующие шаги:
 
-  1. [создайте новый репозиторий на github](https://github.com/new) с именем `react-school-entrants-tasks-py`
+  1. [создайте новый репозиторий на github](https://github.com/new) с именем `<your-name>-tasks`
   1. склонируйте данный репозиторий на Ваш компьютер:
       ```shell
       git clone git@github.com:pdffiller/react-school-entrants-tasks-js.git school-tasks
